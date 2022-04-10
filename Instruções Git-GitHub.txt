@@ -36,9 +36,12 @@ e do tipo que colocar depois do .)
 -Na pasta Objects dentro do .git que ficará os commits que verá mais pra frente
 
 -git status (diz se tem algum arquivo que precisa ser adicionado a pasta .git{repositório} ou não)
+-quando estiver em vermelho é porque não foi adicionado ao repositório, quando estiver verde é porque foi,
+mas quando está todas as etapas concluidas (adicionado ao repositório e criado um commit) não aparece 
 -git add "nome do arquivo.tipo do arquivo" (para adicionar um arquivo específico ao repositório)
 -git add . ou git add * (adiciona todos os arquivos daquela pasta ao repositório)
 
+-git commit -m "nome que quiser" (cria )
 
  
 
