@@ -59,6 +59,6 @@ e já crio uma commit para aquele container, tudo em uma linha só) {posso usar 
 -hash é o id de cada commit, cada commit tem seu id{hash}
 -git checkout "hash" (para mudar de commits{versões})
 (para ver o hash de cada commit basta escrever git log --oneline)
-
+-quando você usar o checkout a versão que você trocou ficará desanexa
 
 
