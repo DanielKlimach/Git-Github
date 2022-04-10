@@ -48,8 +48,8 @@ git log --oneline (mostra as versões{commits} do git com seu nome e seu código
 -git add . (armazena os arquivos em um container) git commit -m "nome" (adiciona o container ao repositório .git)
 
 -master é o ramo de commits principal, head é o commit que está selecionado
--git commit -am "nome.tipo_do_arquivo comentário do commit" (eu ja adiciono o arquivo ao container 
-e já crio uma commit para aquele container, tudo em uma linha só) {posso usar o . para add todos os arquivos}
+-git commit -am "comentário do commit" (eu ja adiciono o arquivo ao container 
+e já crio uma commit para aquele container, tudo em uma linha só)
 
 -git log --graph (cria um gráfico dos seus commits, facilita se localizar)
 -git commit --amend -m "nova mensagem" (para renomear o ultimo commit selecionado) NESSEITA DE REVISÃO 
