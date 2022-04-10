@@ -37,11 +37,20 @@ e do tipo que colocar depois do .)
 
 -git status (diz se tem algum arquivo que precisa ser adicionado a pasta .git{repositório} ou não)
 -quando estiver em vermelho é porque não foi adicionado ao repositório, quando estiver verde é porque foi,
-mas quando está todas as etapas concluidas (adicionado ao repositório e criado um commit) não aparece 
+mas quando está todas as etapas concluidas (adicionado ao repositório e criado um commit)
+aparece nothing to commit, working tree clean
 -git add "nome do arquivo.tipo do arquivo" (para adicionar um arquivo específico ao repositório)
 -git add . ou git add * (adiciona todos os arquivos daquela pasta ao repositório)
 
--git commit -m "nome que quiser" (cria )
+-git commit -m "nome que quiser" (cria uma versão de armazenamento dos arquivos)
+-git log (mostra as versões{commits} criados naquele .git e por quem com nome e email)
+git log --oneline (mostra as versões{commits} do git com seu nome e seu código de versão,  uma maneira melhor)
+-git add . (armazena os arquivos em um container) git commit -m "nome" (adiciona o container ao repositório .git)
+
+-master é o ramo de commits principal, head é o commit que está selecionado
+-git commit -am "nome.tipo_do_arquivo comentário do commit" (eu ja adiciono o arquivo ao container 
+e já crio uma commit para aquele container, tudo em uma linha só)
+
 
  
 
