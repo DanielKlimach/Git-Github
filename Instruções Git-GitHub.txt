@@ -1,0 +1,45 @@
+-git config --global user.name "nome que quiser" (configura o nome do usuario do git)
+-git config --global user.email "email que quiser" (configura o email do usuario do git)
+-git config user.email (mostra o email que está sendo utilizado)
+-git config user.name (mostra o nome que está sendo utilizado)
+
+-git config core.editor (mostra o caminho que o git está vinculado, em algum programa, caso não tenha faça digite:)
+-git config core. editor "diretório do programa desejado" (vincula um programa com o git, no meu caso é o Visual Studio Code)
+Além disso você precisa:
+
+-Clicar com o botão direito no programa que você vinculou no git [ex:Visual Studio Code], depois
+ir em propriedades, em Destino, copie seu diretório, depois vá no painel de controle > sistema e seguraça > sistema >
+configurações avançadas do sistema > variáveis de ambiente > novo... > nome da variável: nome que quiser [ex:code]
+valor da variável: cole o diretório copiado > dê ok em tudo
+
+-Agora se escrever o nome da variável que colocou [ex: code] o git abrirá automaticamente 
+o programa vinculado[ex: Visual Studio Code´]
+
+-pwd (mostra o diretório que aquele documento git está vinculado)
+-ls (mostra uma lista de todos os aqueivos e pastas daquele diretório)
+-clear (limpa a tela)
+-cd (entra dentro de uma pasta, usado para entrar em um diretório desejado)
+[ex: cd \c > cd \Users > cd \DELL > cd \OneDrive > cd \Documentos > cd \Estudos]
+
+-mkdir "nome que quiser" (cria uma pasta no diretório selecionado com o cd)
+touch "nome que quiser.tipo_do_arquivo"[ex: exemplo.txt] (cria um arquivo com o nome que colocar
+e do tipo que colocar depois do .)
+
+-Ou vá em uma pasta que queira vincular seus projetos com o git e clique com o botão direito e logo clique em git bash here
+(ele ja seleciona aquele diretório para fazer alterações sem precisar usar os comandos cd, ls, touch e etc)
+
+-git init (cria uma pasta git para trabalhar com os arquivos que tem ali, e execultar muitos outros comandos)
+{não esqueça de selecionar o diretório com o git dash here ou manualmente}
+-Para ver a pasta .git você precisa ir no menu da pasta selecionada clicar em exibir >
+ Mostrar/Ocultar > Selecionar Itens Ocultos
+-Dentro dessa pasta que todo o seu conteúdo será armazenado pelo git
+-Na pasta Objects dentro do .git que ficará os commits que verá mais pra frente
+
+-git status (diz se tem algum arquivo que precisa ser adicionado a pasta .git{repositório} ou não)
+-git add "nome do arquivo.tipo do arquivo" (para adicionar um arquivo específico ao repositório)
+-git add . ou git add * (adiciona todos os arquivos daquela pasta ao repositório)
+
+
+ 
+
+
