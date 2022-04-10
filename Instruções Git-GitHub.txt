@@ -59,6 +59,19 @@ e já crio uma commit para aquele container, tudo em uma linha só) {posso usar 
 -hash é o id de cada commit, cada commit tem seu id{hash}
 -git checkout "hash" (para mudar de commits{versões})
 (para ver o hash de cada commit basta escrever git log --oneline)
--quando você usar o checkout a versão que você trocou ficará desanexa
+-quando você usar o checkout as versões posteriores a ela, ficarão anexadas na branch master,
+já a versão selecionada e as versões anteriores serão desanexadas da branch master,
+caso queira retornar as versões posteriores você precisará escrever: git checkout "master"
+(no caso a branch master que sofrerá essas alterações porque é com ela que estamos trabalhando)
+
+-git diff (mostra as alterações que você fez em seus arquivos, verde é o que escreveu, vermelho é oque apagou)
+-git reset HEAD (caso você tenha atualizado ou adicionado um arquivo e colocado ele no container com o git add,
+mas ainda não adicionou o container ao seu commit com git commit "nome", e se arrependeu de suas alterações você pode
+digitar esse comando para desfazer as alterações, mas depois terá que usar o git add mais uma vez)
+
+-git reset --hard "hash" (para apagar seus commits e voltar até o hash selecionado, 
+enquanto não chegar no commit desejado ele irá apagar os demais)
+
+
 
 
