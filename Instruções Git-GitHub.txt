@@ -72,6 +72,8 @@ digitar esse comando para desfazer as alterações, mas depois terá que usar o 
 -git reset --hard "hash" (para apagar seus commits e voltar até o hash selecionado, 
 enquanto não chegar no commit desejado ele irá apagar os demais)
 
+-git checkout -b "Nome" (Cria uma nova ramificação{branch}, já com todos os commits do ramo que estava sendo utilizado)
+
 
 
 
