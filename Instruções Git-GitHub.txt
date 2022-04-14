@@ -108,5 +108,10 @@ copie o link, vá em uma pasta onde você quer que o projeto(repositório fique)
 depois escreva: git clone "link copiado"
 
 -Para editar o arquivo direto no github e aplicar as alterações no git local você deve clicar no lápis (edit file)
-editar o que quiser, depois Escreva o nome da commit no commit changes, depois clique no botão commit changes
+editar o que quiser, depois Escreva o nome da commit no commit changes, depois clique no botão commit changes, eu também
+posso criar novos arquivos no meu repositório direto no git, quando for criar um novo arquivo se eu digitar "nomeDaPasta"/nomeDoArquivo
+essa barra fará eu criar uma pasta no meu repositório e dentro dessa pasta terá meu novo arquivo criado, mas também terá que criar um novo
+commit no gitHub que também estará embaixo da sua criação de arquivos,
+-git pull (para vincular as alterações do GitHub para o Git) 
+
 
