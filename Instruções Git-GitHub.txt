@@ -83,11 +83,15 @@ maanter as duas linhas ou fazer uma comparação automática
 
 
 -git remote -(verifica se tem algum repositório remoto, além do local que ele está vinculado)
-Se não tiver, não aparecerá nada
-<<<<<<< HEAD
-=======
+Se não tiver, não aparecerá nada 
 
+-quando você cria um repositório no github aparecerá instruções
+do que fazer para vincular o git com ele, antes clique na opção https
 
+-git remote add origin "link do repositório" (vincular o projeto git a um repositório remoto)
+
+-git push -u origin "master" (coloca o conteúdo da branch master no link remoto)
+-a primeira vez que você fizer isso o git vai pedir para você se autenticar
 -depois de fazer esse processo as próximas pode apenas digitar git push que ele atualizará no link remoto
 
 -erro:403 permission denied (erro de autenticação - vá em gerenciador de credenciais >
@@ -105,12 +109,5 @@ depois escreva: git clone "link copiado"
 
 -Para editar o arquivo direto no github e aplicar as alterações no git local você deve clicar no lápis (edit file)
 editar o que quiser, depois 
->>>>>>> master
 
--quando você cria um repositório no github aparecerá instruções
-do que fazer para vincular o git com ele, antes clique na opção https
 
--git remote add origin "link do repositório" (vincular o projeto git a um repositório remoto)
-
--git push -u origin "master" (coloca o conteúdo da branch master no link remoto)
--a primeira vez que você fizer isso o git vai pedir para você se autenticar
