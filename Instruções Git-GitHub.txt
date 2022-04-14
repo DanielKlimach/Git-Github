@@ -67,12 +67,20 @@ caso queira retornar as versões posteriores você precisará escrever: git chec
 -git diff (mostra as alterações que você fez em seus arquivos, verde é o que escreveu, vermelho é oque apagou)
 -git reset HEAD (caso você tenha atualizado ou adicionado um arquivo e colocado ele no container com o git add,
 mas ainda não adicionou o container ao seu commit com git commit "nome", e se arrependeu de suas alterações você pode
-digitar esse comando para desfazer as alterações, mas depois terá que usar o git add mais uma vez)
+digitar esse comando para desfazer as alteraçõeam s, mas depois terá que usar o git add mais uma vez)
 
 -git reset --hard "hash" (para apagar seus commits e voltar até o hash selecionado, 
 enquanto não chegar no commit desejado ele irá apagar os demais)
 
 -git checkout -b "Nome" (Cria uma nova ramificação{branch}, já com todos os commits do ramo que estava sendo utilizado)
+-git merge "nome" para fundir as branchs, primeiro vc tem que estar na branch master, depois escrever
+o código com o nome da branch que você quer fundir)
+-Se o código for o mesmo um deles continua, não duplica, se um linha estiver diferente da outra aparecerá conflit no git,
+para resolver você entra no programa que está usando e aparecerá a opção de manter uma linha e excluir a outra, vice-versa,
+maanter as duas linhas ou fazer uma comparação automática 
+-depois de resolver os conflitos você tem que fazer um novo add e commit, então ele fará o merge automaticamente no novo commit
+-git merge --abort (abortar o marge quando houver um conflito)
+
 
 
 
