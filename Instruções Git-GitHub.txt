@@ -82,10 +82,13 @@ maanter as duas linhas ou fazer uma comparação automática
 -git merge --abort (abortar o marge quando houver um conflito)
 
 
--git remote (verifica se tem algum repositório remoto, além do local que ele está vinculado)
+-git remote -(verifica se tem algum repositório remoto, além do local que ele está vinculado)
 Se não tiver, não aparecerá nada
 
 -quando você cria um repositório no github aparecerá instruções
 do que fazer para vincular o git com ele, antes clique na opção https
 
+-git remote add origin "link do repositório" (vincular o projeto git a um repositório remoto)
 
+-git push -u origin "master" (coloca o conteúdo da branch master no link remoto)
+-a primeira vez que você fizer isso o git vai pedir para você se autenticar
