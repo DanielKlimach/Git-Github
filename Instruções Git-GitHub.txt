@@ -133,3 +133,13 @@ depois git commit "nome que quiser" (para criar um novo commit com os conflitos 
 nesse projeto com o notepad++, mas o Visual Studio é muito bom para resolver conflitos, pois aparece  os menus do que você vai querer fazer, então na hora de resolver
 conflitos eu posso resolver no Visual, mas depois continuar trabalhando no notepad++ sem problemas, inclusive o Visual é meu editor padrão do git, que eu configurei
  
+-você pode entrar nos repositórios dos outros no github e clicar em fork, no canto superio direito, quando você for nos seus repositórios estará o clone do projeto que você deu fork
+(ele exibe de onde veio o projeto, posso fazer o que quiser, novas commits etc que não irá interferir no projeto autentico do dono do repositório)
+-quando você altera, em cima do código que você alterou, mostra quantos contribuidores daquele código tem
+-caso eu queira sugerir a alteração que fiz para o dono do repositório eu clico em new pull request, na página principal do repositório específico,
+ele mostra as suas alterações, então você clica em new pull-request, então aparecerá um comentário para você descrever sua alteração para o dono
+
+-Caso você receba new pull request do seu código aparecerá um novo número de pull request no seu repositório, você clica na aba pull request, então aparecerá
+o comentário da pessoa que te enviou com o link do commit que ele fez, então clica nele e mostrará as alterações daquele commit em relação ao seu commit principal
+eu clico em conversation para voltar ao comentário do pull request e se você gostar das alterações clique em merge pull request > confirm merge, no seu repositório
+mostrará que você aceitou um pull request no seu projeto.
