@@ -114,4 +114,22 @@ essa barra fará eu criar uma pasta no meu repositório e dentro dessa pasta ter
 commit no gitHub que também estará embaixo da sua criação de arquivos,
 -git pull (para vincular as alterações do GitHub para o Git) 
 
+-Depois de digitar o Git Log você terá que apertar a tecla Q para ele voltar a opção de digitar códigos
 
+-Outra situação possível de conflito é entre duas commits em um repositório remoto (Ex: trabalho em um projeto em um pc doméstico e em outro pc da faculdade, onde
+faço o git push das minhas comits para o github como repositório remoto, um dia fiz alterações no meu projeto do pc da faculdade e dei git push, outro dia fui mexer no meu
+pc doméstico, mas as alterações do meu projeto que fiz na faculdade não estavam salvas naquele pc doméstico, mas mesmo assim resolvi editar os códigos com outras informações,
+então quando fui dar git push da minha nova commit deu conflito de commits no meu repositório remoto, o github)
+
+-git fetch (faz o download das alterações no meu repositório remoto, para eu editar e resolver o conflito explicado acima,
+ele equivale ao git pull mas o fetch além disso faz o merge entre as commits)
+
+-depois do comando fetch digite o comando: git remote (para ver o seu repositório remoto [ex:origin], depois de um: git checkout "nome do repositório" (ex:origin),
+para visualisar o git e os arquivos para a atualização daquele repositório, depois mude de volta para o repositório principal: git checkout "master", depois eu digito
+git pull e ele me mostrará os conflitos que estão tendo entre os commits, depois de resolver os conflitos, eu digito git add . (para adicionar as alteraçõs),
+depois git commit "nome que quiser" (para criar um novo commit com os conflitos resolvidos) e então git push
+
+-independente do tipo de arquivo que vc esteja trabalhando no seu projeto, vc pode fazer as alterações em qualquer programa que quiser, por exemplo, estou trabalhando
+nesse projeto com o notepad++, mas o Visual Studio é muito bom para resolver conflitos, pois aparece  os menus do que você vai querer fazer, então na hora de resolver
+conflitos eu posso resolver no Visual, mas depois continuar trabalhando no notepad++ sem problemas, inclusive o Visual é meu editor padrão do git, que eu configurei
+ 
