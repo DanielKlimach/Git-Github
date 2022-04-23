@@ -145,3 +145,5 @@ eu clico em conversation para voltar ao comentário do pull request e se você g
 mostrará que você aceitou um pull request no seu projeto.
 
 -git push -f origin master (você irá substituir o conteúdo da branch remota pelo código que você tem no seu repositório local)
+
+teste
