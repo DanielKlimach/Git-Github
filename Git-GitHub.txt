@@ -143,3 +143,5 @@ ele mostra as suas alterações, então você clica em new pull-request, então 
 o comentário da pessoa que te enviou com o link do commit que ele fez, então clica nele e mostrará as alterações daquele commit em relação ao seu commit principal
 eu clico em conversation para voltar ao comentário do pull request e se você gostar das alterações clique em merge pull request > confirm merge, no seu repositório
 mostrará que você aceitou um pull request no seu projeto.
+
+-git push -f origin master (você irá substituir o conteúdo da branch remota pelo código que você tem no seu repositório local)
