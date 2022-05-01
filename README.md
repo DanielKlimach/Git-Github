@@ -1,5 +1,7 @@
 # Git-Github
-Uma revisão bem detalhada sobre todas as funcionalidades do Git e Github que conheço
+### Uma revisão bem detalhada sobre todas as funcionalidades do Git e Github que conheço
+
+![Simbolo Git e GitHub](https://github.com/DanielKlimach/Git-Github/blob/master/Github.png)
 
 -git config --global user.name "nome que quiser" (configura o nome do usuario do git)
 -git config --global user.email "email que quiser" (configura o email do usuario do git)
@@ -148,3 +150,6 @@ eu clico em conversation para voltar ao comentário do pull request e se você g
 mostrará que você aceitou um pull request no seu projeto.
 
 -git push -f origin master (você irá substituir o conteúdo da branch remota pelo código que você tem no seu repositório local)
+
+### Referências
+[Primeiro Vídeo da Playlist de referência](https://www.youtube.com/watch?v=FF1f4bKYhoo&list=PLbEOwbQR9lqzK14I7OOeREEIE4k6rjgIj&index=2 "Vídeo de Introdução ao Curso")
