@@ -151,7 +151,7 @@ faço o git push das minhas comits para o github como repositório remoto, um di
 </ul>
 
 <ul>
-<li>independente do tipo de arquivo que vc esteja trabalhando no seu projeto, vc pode fazer as alterações em qualquer programa que quiser, por exemplo, estou trabalhando nesse projeto com o notepad++, mas o Visual Studio é muito bom para resolver conflitos, pois aparece  os menus do que você vai querer fazer, então na hora de resolver conflitos eu posso resolver no Visual, mas depois continuar trabalhando no notepad++ sem problemas, inclusive o Visual é meu editor padrão do git, que eu configurei<li>
+<li>independente do tipo de arquivo que vc esteja trabalhando no seu projeto, vc pode fazer as alterações em qualquer programa que quiser, por exemplo, estou trabalhando nesse projeto com o notepad++, mas o Visual Studio é muito bom para resolver conflitos, pois aparece  os menus do que você vai querer fazer, então na hora de resolver conflitos eu posso resolver no Visual, mas depois continuar trabalhando no notepad++ sem problemas, inclusive o Visual é meu editor padrão do git, que eu configurei</li>
 </ul>
 
 <ul>
