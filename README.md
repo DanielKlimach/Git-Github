@@ -80,91 +80,97 @@ mas quando está todas as etapas concluidas (adicionado ao repositório e criado
 <li>hash é o id de cada commit, cada commit tem seu id{hash}</li>
 <li>git checkout "hash" (para mudar de commits{versões})<br>
 (para ver o hash de cada commit basta escrever git log --oneline)</li>
--quando você usar o checkout as versões posteriores a ela, ficarão anexadas na branch master,<br/>
-já a versão selecionada e as versões anteriores serão desanexadas da branch master,<br/>
-caso queira retornar as versões posteriores você precisará escrever: git checkout "master"<br/>
-(no caso a branch master que sofrerá essas alterações porque é com ela que estamos trabalhando)
+<li>quando você usar o checkout as versões posteriores a ela, ficarão anexadas na branch master, já a versão selecionada e as versões anteriores serão desanexadas da branch master, caso queira retornar as versões posteriores você precisará escrever: git checkout "master"<br/>
+(no caso a branch master que sofrerá essas alterações porque é com ela que estamos trabalhando)</li>
+</ul>
 
--git diff (mostra as alterações que você fez em seus arquivos, verde é o que escreveu, vermelho é oque apagou)<br/>
--git reset HEAD (caso você tenha atualizado ou adicionado um arquivo e colocado ele no container com o git add,<br/>
-mas ainda não adicionou o container ao seu commit com git commit "nome", e se arrependeu de suas alterações você pode<br/>
-digitar esse comando para desfazer as alteraçõeam s, mas depois terá que usar o git add mais uma vez)
+<ul>
+<li>git diff (mostra as alterações que você fez em seus arquivos, verde é o que escreveu, vermelho é oque apagou)</li>
+<li>git reset HEAD (caso você tenha atualizado ou adicionado um arquivo e colocado ele no container com o git add, mas ainda não adicionou o container ao seu commit com git commit "nome", e se arrependeu de suas alterações você pode digitar esse comando para desfazer as alteraçõeam s, mas depois terá que usar o git add mais uma vez)</li>
+</ul>
 
--git reset --hard "hash" (para apagar seus commits e voltar até o hash selecionado,<br/>
-enquanto não chegar no commit desejado ele irá apagar os demais)
+<ul>
+<li>git reset --hard "hash" (para apagar seus commits e voltar até o hash selecionado, enquanto não chegar no commit desejado ele irá apagar os demais)</li>
+</ul>
 
--git checkout -b "Nome" (Cria uma nova ramificação{branch}, já com todos os commits do ramo que estava sendo utilizado)<br/>
--git merge "nome" para fundir as branchs, primeiro vc tem que estar na branch master, depois escrever<br/>
-o código com o nome da branch que você quer fundir)<br/>
--Se o código for o mesmo um deles continua, não duplica, se um linha estiver diferente da outra aparecerá conflit no git,<br/>
-para resolver você entra no programa que está usando e aparecerá a opção de manter uma linha e excluir a outra, vice-versa,<br/>
-maanter as duas linhas ou fazer uma comparação automática <br/>
--depois de resolver os conflitos você tem que fazer um novo add e commit, então ele fará o merge automaticamente no novo commit<br/>
--git merge --abort (abortar o marge quando houver um conflito)
+<ul>
+<li>git checkout -b "Nome" (Cria uma nova ramificação{branch}, já com todos os commits do ramo que estava sendo utilizado)</li>
+<li>git merge "nome" para fundir as branchs, primeiro vc tem que estar na branch master, depois escrever o código com o nome da branch que você quer fundir)</li>
+<li>Se o código for o mesmo um deles continua, não duplica, se um linha estiver diferente da outra aparecerá conflit no git, para resolver você entra no programa que está usando e aparecerá a opção de manter uma linha e excluir a outra, vice-versa, manter as duas linhas ou fazer uma comparação automática</li>
+<li>depois de resolver os conflitos você tem que fazer um novo add e commit, então ele fará o merge automaticamente no novo commit</li>
+<li>git merge --abort (abortar o marge quando houver um conflito)</li>
+</ul>
 
+<ul>
+<li>git remote -(verifica se tem algum repositório remoto, além do local que ele está vinculado, se não tiver, não aparecerá nada)</li>
+</ul>
 
--git remote -(verifica se tem algum repositório remoto, além do local que ele está vinculado)<br/>
-Se não tiver, não aparecerá nada 
+<ul>
+<li>quando você cria um repositório no github aparecerá instruções do que fazer para vincular o git com ele, antes clique na opção https</li>
+</ul>
 
--quando você cria um repositório no github aparecerá instruções<br/>
-do que fazer para vincular o git com ele, antes clique na opção https
-
--git remote add origin "link do repositório" (vincular o projeto git a um repositório remoto)
-
--git push -u origin "master" (coloca o conteúdo da branch master no link remoto)<br/>
--a primeira vez que você fizer isso o git vai pedir para você se autenticar<br/>
--depois de fazer esse processo as próximas pode apenas digitar git push que ele atualizará no link remoto
-
--erro:403 permission denied (erro de autenticação - vá em gerenciador de credenciais ><br/>
-credenciais do windows > em credenciais genericas terá a credencial do GitHub > clique em remover ><br/>
-volte ao git e use o código git push que antes tinha dado erro, vai aparecer a opção de se logar,<br/>
-em cime clique na opção token, vá no GitHub > settings > Developer Setings > Personal Accers Tokens ><br/>
-> Generate new token > em Note escreva o nome do token que quiser > escolha a data de expiração do token ><br/>
-marque todas as caixas em negritos[permita todos os acessos] > Generate Token > Copie o token e salve em algum lugar<br/>
-pois ele não será exibido novamente > cole o token no menu de login de token do git > escreva git push e dará certo<br/>
-Esse problema vem quando se quer acessas seu código remotamente
-
--Para clonar um repositório você entra em um repositório do git e clique na opção clone or download ><br/>
-copie o link, vá em uma pasta onde você quer que o projeto(repositório fique), clique em git dash here<br/>
-depois escreva: git clone "link copiado"
-
--Para editar o arquivo direto no github e aplicar as alterações no git local você deve clicar no lápis (edit file)<br/>
-editar o que quiser, depois Escreva o nome da commit no commit changes, depois clique no botão commit changes, eu também<br/>
-posso criar novos arquivos no meu repositório direto no git, quando for criar um novo arquivo se eu digitar "nomeDaPasta"/nomeDoArquivo<br/>
-essa barra fará eu criar uma pasta no meu repositório e dentro dessa pasta terá meu novo arquivo criado, mas também terá que criar um novo<br/>
-commit no gitHub que também estará embaixo da sua criação de arquivos,<br/>
--git pull (para vincular as alterações do GitHub para o Git) 
-
--Depois de digitar o Git Log você terá que apertar a tecla Q para ele voltar a opção de digitar códigos
-
--Outra situação possível de conflito é entre duas commits em um repositório remoto (Ex: trabalho em um projeto em um pc doméstico e em outro pc da faculdade, onde<br/>
-faço o git push das minhas comits para o github como repositório remoto, um dia fiz alterações no meu projeto do pc da faculdade e dei git push, 
-outro dia fui mexer no meu<br/>
-pc doméstico, mas as alterações do meu projeto que fiz na faculdade não estavam salvas naquele pc doméstico, mas mesmo assim resolvi editar os códigos com outras<br/> informações, então quando fui dar git push da minha nova commit deu conflito de commits no meu repositório remoto, o github)
-
--git fetch (faz o download ds alterações no meu repositório remoto, para eu editar e resolver o conflito explicado acima,<br/>
-ele equivale ao git pull mas o fetch além disso faz o merge entre as commits)
-
--depois do comando fetch digite o comando: git remote (para ver o seu repositório remoto [ex:origin],
-depois de um: git checkout "nome do repositório" (ex:origin), para visualisar o git e os arquivos para a atualização daquele repositório, depois mude de volta para o repositório principal: git checkout "master", depois eu digito git pull e ele me mostrará os conflitos que estão tendo entre os commits, depois de resolver os conflitos, eu digito git add . (para adicionar as alteraçõs),
-depois git commit "nome que quiser" (para criar um novo commit com os conflitos resolvidos) e então git push
-
--independente do tipo de arquivo que vc esteja trabalhando no seu projeto, vc pode fazer as alterações em qualquer programa que quiser, por exemplo, estou trabalhando
-nesse projeto com o notepad++, mas o Visual Studio é muito bom para resolver conflitos, pois aparece  os menus do que você vai querer fazer, então na hora de resolver
-conflitos eu posso resolver no Visual, mas depois continuar trabalhando no notepad++ sem problemas, inclusive o Visual é meu editor padrão do git, que eu configurei
+<ul>
+<li>git remote add origin "link do repositório" (vincular o projeto git a um repositório remoto)</li>
+</ul>
  
--você pode entrar nos repositórios dos outros no github e clicar em fork, no canto superio direito, quando você for nos seus repositórios estará o clone do projeto que você deu fork
-(ele exibe de onde veio o projeto, posso fazer o que quiser, novas commits etc que não irá interferir no projeto autentico do dono do repositório)
--quando você altera, em cima do código que você alterou, mostra quantos contribuidores daquele código tem
--caso eu queira sugerir a alteração que fiz para o dono do repositório eu clico em new pull request, na página principal do repositório específico,
-ele mostra as suas alterações, então você clica em new pull-request, então aparecerá um comentário para você descrever sua alteração para o dono
+<ul>
+<li>git push -u origin "master" (coloca o conteúdo da branch master no link remoto)</li>
+<li>a primeira vez que você fizer isso o git vai pedir para você se autenticar</li>
+<li>depois de fazer esse processo as próximas pode apenas digitar git push que ele atualizará no link remoto</li>
+</ul>
+ 
+<ul>
+<li>erro:403 permission denied (erro de autenticação - vá em gerenciador de credenciais > credenciais do windows > em credenciais genericas terá a credencial do GitHub > clique em remover > volte ao git e use o código git push que antes tinha dado erro, vai aparecer a opção de se logar, em cime clique na opção token, vá no GitHub > settings > Developer Setings > Personal Accers Tokens > Generate new token > em Note escreva o nome do token que quiser > escolha a data de expiração do token ><br/>
+marque todas as caixas em negritos[permita todos os acessos] > Generate Token > Copie o token e salve em algum lugar pois ele não será exibido novamente > cole o token no menu de login de token do git > escreva git push e dará certo esse problema vem quando se quer acessas seu código remotamente </li>
+</ul>
 
--Caso você receba new pull request do seu código aparecerá um novo número de pull request no seu repositório, você clica na aba pull request, então aparecerá
+<ul>
+<li>Para clonar um repositório você entra em um repositório do git e clique na opção clone or download > copie o link, vá em uma pasta onde você quer que o projeto(repositório fique), clique em git dash here, depois escreva: git clone "link copiado"</li>
+</ul>
+
+<ul>
+<li>Para editar o arquivo direto no github e aplicar as alterações no git local você deve clicar no lápis (edit file) editar o que quiser, depois Escreva o nome da commit no commit changes, depois clique no botão commit changes, eu também posso criar novos arquivos no meu repositório direto no git, quando for criar um novo arquivo se eu digitar "nomeDaPasta"/nomeDoArquivo essa barra fará eu criar uma pasta no meu repositório e dentro dessa pasta terá meu novo arquivo criado, mas também terá que criar um novo commit no gitHub que também estará embaixo da sua criação de arquivos</li>
+<li>git pull (para vincular as alterações do GitHub para o Git)</li>
+</ul>
+ 
+<ul>
+<li>Depois de digitar o Git Log você terá que apertar a tecla Q para ele voltar a opção de digitar códigos</li>
+</ul>
+
+<ul>
+<li>Outra situação possível de conflito é entre duas commits em um repositório remoto (Ex: trabalho em um projeto em um pc doméstico e em outro pc da faculdade, onde
+faço o git push das minhas comits para o github como repositório remoto, um dia fiz alterações no meu projeto do pc da faculdade e dei git push, outro dia fui mexer no meu pc doméstico, mas as alterações do meu projeto que fiz na faculdade não estavam salvas naquele pc doméstico, mas mesmo assim resolvi editar os códigos com outras informações, então quando fui dar git push da minha nova commit deu conflito de commits no meu repositório remoto, o github)</li>
+</ul>
+
+<ul>
+<li>git fetch (faz o download ds alterações no meu repositório remoto, para eu editar e resolver o conflito explicado acima, ele equivale ao git pull mas o fetch além disso faz o merge entre as commits)</li>
+</ul>
+ 
+<ul>
+<li>depois do comando fetch digite o comando: git remote (para ver o seu repositório remoto [ex:origin], depois de um: git checkout "nome do repositório" (ex:origin), para visualisar o git e os arquivos para a atualização daquele repositório, depois mude de volta para o repositório principal: git checkout "master", depois eu digito git pull e ele me mostrará os conflitos que estão tendo entre os commits, depois de resolver os conflitos, eu digito git add . (para adicionar as alteraçõs), depois git commit "nome que quiser" (para criar um novo commit com os conflitos resolvidos) e então git push</li>
+</ul>
+
+<ul>
+<li>independente do tipo de arquivo que vc esteja trabalhando no seu projeto, vc pode fazer as alterações em qualquer programa que quiser, por exemplo, estou trabalhando nesse projeto com o notepad++, mas o Visual Studio é muito bom para resolver conflitos, pois aparece  os menus do que você vai querer fazer, então na hora de resolver conflitos eu posso resolver no Visual, mas depois continuar trabalhando no notepad++ sem problemas, inclusive o Visual é meu editor padrão do git, que eu configurei<li>
+</ul>
+
+<ul>
+<li>você pode entrar nos repositórios dos outros no github e clicar em fork, no canto superio direito, quando você for nos seus repositórios estará o clone do projeto que você deu fork<br>
+(ele exibe de onde veio o projeto, posso fazer o que quiser, novas commits etc que não irá interferir no projeto autentico do dono do repositório)</li>
+<li>quando você altera, em cima do código que você alterou, mostra quantos contribuidores daquele código tem</li>
+<li>caso eu queira sugerir a alteração que fiz para o dono do repositório eu clico em new pull request, na página principal do repositório específico, ele mostra as suas alterações, então você clica em new pull-request, então aparecerá um comentário para você descrever sua alteração para o dono</li>
+</ul>
+ 
+<ul>
+<li>Caso você receba new pull request do seu código aparecerá um novo número de pull request no seu repositório, você clica na aba pull request, então aparecerá
 o comentário da pessoa que te enviou com o link do commit que ele fez, então clica nele e mostrará as alterações daquele commit em relação ao seu commit principal
 eu clico em conversation para voltar ao comentário do pull request e se você gostar das alterações clique em merge pull request > confirm merge, no seu repositório
-mostrará que você aceitou um pull request no seu projeto.
-
--git push -f origin master (você irá substituir o conteúdo da branch remota pelo código que você tem no seu repositório local)
+mostrará que você aceitou um pull request no seu projeto.</li>
+</ul>
+ 
+<ul> 
+<li>git push -f origin master (você irá substituir o conteúdo da branch remota pelo código que você tem no seu repositório local)</li>
+</ul>
 
 ### Referências
 [Primeiro Vídeo da Playlist de referência](https://www.youtube.com/watch?v=FF1f4bKYhoo&list=PLbEOwbQR9lqzK14I7OOeREEIE4k6rjgIj&index=2 "Vídeo de Introdução ao Curso")
