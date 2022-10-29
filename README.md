@@ -118,7 +118,19 @@ mas quando está todas as etapas concluidas (adicionado ao repositório e criado
 <li>a primeira vez que você fizer isso o git vai pedir para você se autenticar</li>
 <li>depois de fazer esse processo as próximas pode apenas digitar git push que ele atualizará no link remoto</li>
 </ul>
- 
+
+<ul>
+<li>Operação para vincular o git local para um remoto:</li>
+<li>1° é importante dizer que tente nã ofazer nenhuma adição de arquivo no repositório remoto antes de vincular e der o git push</li>
+echo "# Java-Spring-Boot" >> README.md
+<li>git init</li>
+<li>git add README.md</li>
+<li>git commit -m "first commit"</li>
+<li>git branch -M main</li>
+<li>git remote add origin https://github.com/DanielKlimach/Java-Spring-Boot.git</li>
+<li>git push -u origin main</li>
+</ul>
+
 <ul>
 <li>erro:403 permission denied (erro de autenticação - vá em gerenciador de credenciais > credenciais do windows > em credenciais genericas terá a credencial do GitHub > clique em remover > volte ao git e use o código git push que antes tinha dado erro, vai aparecer a opção de se logar, em cime clique na opção token, vá no GitHub > settings > Developer Setings > Personal Accers Tokens > Generate new token > em Note escreva o nome do token que quiser > escolha a data de expiração do token ><br/>
 marque todas as caixas em negritos[permita todos os acessos] > Generate Token > Copie o token e salve em algum lugar pois ele não será exibido novamente > cole o token no menu de login de token do git > escreva git push e dará certo esse problema vem quando se quer acessas seu código remotamente </li>
